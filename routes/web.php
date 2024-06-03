@@ -36,7 +36,7 @@ Route::get('/setup', function () {
             // Use token abilities instead of names for clarity
             $adminToken = $user->createToken('admin-token', ['create', 'update', 'delete']);
             $updateToken = $user->createToken('update-token', ['create', 'update']);
-            $basicToken = $user->createToken('basic-token', ['create']);
+            $basicToken = $user->createToken('basic-token', ['none']);
 
             return [
                 'admin' => $adminToken->plainTextToken,
