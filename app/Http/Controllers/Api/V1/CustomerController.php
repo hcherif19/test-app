@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\V1\CustomerResource;
 use App\Http\Resources\V1\CustomerCollection;
 use Illuminate\Http\Request;
+use Knuckles\Scribe\Extracting\Strategies\Responses\UseApiResourceTags;
 
 class CustomerController extends Controller
 {
